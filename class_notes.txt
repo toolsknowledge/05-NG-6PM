@@ -1,0 +1,671 @@
+Day-1
+*****
+
+Introduction to Angular
+=======================
+
+        - Angular is the javascript framework.
+
+        - Angular given by Google.
+
+        - Angular used to build the both web applications and mobile applications.
+
+        - Angular categorized into 3 types.
+
+                1) AngularJS
+
+                2) Angular2
+
+                3) Angular Material
+
+        - AngularJS used to build the web applications with the help of javascript.
+
+        - javascript is the Scripting language.
+
+        - javascript won't follows the OOPS.
+
+        - javascript is the object based Scripting language.
+
+        - current version of Angular2 is Angular12.
+
+        - we can build the Angular12 applications with the help of TypeScript.
+
+        - TypeScript is the programming language provided by microsoft.
+
+        - TypeScript follows the OOPS.
+
+            Ex.
+                    Inheritance
+
+                    Polymorphism
+
+                    Anstraction
+
+                    Encapsulation
+
+                    ---
+                    ---
+                    ---
+         - Angular Material used to apply the styles to the both web applications and mobile applications.
+
+        - in general browsers can't understand TypeScript.
+
+        - so, we must convert TypeScript to equalent javascript.
+
+        - conversion from TypeScript to equalent javascript called as "Transpilation".
+
+        - tsc is the tool, used to perform the Transpilation.
+
+        - tsc stands for TypeScript Compiler.
+
+        - tsc tool, available in "TypeScript" Software.
+
+        - npm is the tool, helps to install TypeScript.
+
+        - npm stands for node packaging manager.
+
+        - npm present in NodeJS.
+
+        - Visual Studio Code is the suggestable IDE to build the Angular applications.
+
+        - Visual Studio Code also called as VSCode.
+
+        - VSCode is the open source IDE, and provided by microsoft.
+
+Installation of Softwares
+*************************
+
+1) download and install NodeJS.
+
+    - npm is the tool, helps to install "TypeScript" and "Angular12".
+
+    - npm stands for node packaging manager.
+
+    - npm present in NodeJS.
+
+    website : https://nodejs.org/en/download/
+
+    file    : node-v14.17.6-x64.msi
+
+
+
+2) install TypeScript
+
+    > npm i -g typescript
+
+    i stands for install
+
+    -g stands for global
+
+
+3) install yarn tool
+
+    yarn tool used to download the libraries.
+
+    yarn tool given by "facebook".
+
+    > npm i -g yarn
+
+
+4) install angular12
+
+
+    > npm install -g @angular/cli
+
+
+    cli stands for command line interface
+
+    cli is the tool.
+
+    cli tool, helps to "build" and "execute" the angular applications.
+
+
+
+5) configure the yarn tool to cli tool
+
+    > ng config --global cli.packageManager yarn
+
+
+6) install Visual Studio Code
+
+
+website : https://code.visualstudio.com/docs/?dv=win
+
+file    : VSCodeUserSetup-x64-1.60.2.exe
+
+
+create and execute the angular application
+******************************************
+1) create the angular application
+
+    > ng new firstApp
+
+    where "firstApp" is the name of the angular application
+
+
+2) switch to angular application
+
+    > cd firstApp
+
+3) execute the angular application
+
+    > ng s -o
+
+    "s" stands for serve
+
+    "-o" stands for open the default browser
+
+
+Default Port Number Angular application is 4200
+
+
+Directory Structure of Angular application
+******************************************
+
+1) node_modules
+
+    node_modules containes libraries, those libraries helps to execute the angular application
+
+
+2) src/app
+
+    used to deploy the applications
+
+    Ex.
+        components
+
+        services
+
+        directives
+
+        pipes
+
+        ----
+        ----
+        ----
+
+3) src/app/app.module.ts
+
+    this file called as registration file / module file / configaration file
+
+    this file used to register the applications
+
+        components
+
+        services
+
+        directives
+
+        pipes
+
+        ----
+        ----
+        ----
+
+4) app.component.ts
+   app.component.html
+   app.component.css
+   app.component.spec.ts
+
+
+        when ever we create the angular application automatically "AppComponent" is the default component.
+
+
+5) assets
+
+    it is used to deploy the static resources.
+
+    Ex.
+        logos
+
+        xml files
+
+        json files
+
+        ----
+        ----
+        ----
+
+
+5) environments
+
+    used to configure the required environment to work on angular application
+
+
+6) favicon.ico
+
+    this is a default logo of angular.
+
+
+7) index.html
+
+    angular starts the execution from "index.html" file.
+
+    index.html file is the main template
+
+    index.html file internally invokes the main.ts file
+
+    main.ts file internally invokes the app.module.ts file
+
+    app.module.ts file containes our applications configarations
+
+    based on our applications configarations angular framework will execute our applications.
+
+
+8) polyfills.ts
+
+    polyfills behaves like library
+
+    this library helps to convert the TypeScript to equalent javascript.
+
+
+9) styles.css
+
+    styles.css file used to define the global styles.
+
+    these styles applicable to entire angular project.
+
+
+10) test.ts
+
+    test.ts behaves like library
+
+    this library helps to write the test cases.
+
+
+11) .browserslistrc
+
+    containes supporting browsers of angular.
+
+12) .editorconfig
+
+    related to VSCode
+
+13) .gitignore  
+
+    stops the pushing the libraries to repositories
+
+
+14) angular.json
+
+    used to describe the directory structure of angular application
+
+
+
+15) karma.conf.js
+
+    acting like library file to write unit test cases.
+
+
+16) package.json
+
+    used to download the libraries.
+
+
+Component
+*********
+    - Reusable Portion of Complex UI Called as Component.
+
+    - As a Angular Developer, we can create more than one component.
+
+    - we can reuse the components.
+
+    - as a angular developer, we can provide communication between compoenents.
+
+    - Simple typescript class behaves like component.
+
+steps to create the first component
+===================================
+
+1) create the angular application
+
+    > ng new componentApp
+
+        where "componentApp" is the name of the angular application
+
+
+    **********************************************
+   componentApp
+              src  
+                app
+                  first.component.ts
+                  first.component.html
+
+
+                  app.module.ts
+                index.html
+    **********************************************
+
+
+services
+********
+    services are used to share the common business logic to multiple compoenents
+
+    services overcomes the data redundancy.
+
+    we can inject service to the compoenents with the help of constructor.
+
+    injecting service to compoenents called as dependency injection.
+
+    "Injectable" is the Predefined class used to create the services.
+
+    Injectable present in @angular/core package.
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+30-09-2021
+==========
+
+*****************************************
+mean-project
+           src  
+             app
+               compoenents
+                  ui.component.ts
+                  ui.component.html
+
+                  backend.component.ts
+                  backend.component.html
+
+                  database.component.ts
+                  database.component.html
+               app.module.ts
+            index.html
+******************************************
+                
+01-10-2021
+**********
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+serviceEx
+        src 
+           app
+             services
+                emp.service.ts
+             compoenents
+                first.component.ts
+                first.component.html
+
+                second.component.ts
+                second.component.html
+             app.module.ts
+          index.html
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+05-10-2021
+**********
+
+loginEx
+      src
+        app
+          services
+              login.service.ts
+          compoenents
+                login.component.ts
+                login.component.html
+          app.module.ts
+        index.html
+
+
+communication between compoenents
+*********************************
+    angular applications are component based applications
+
+    we can create more than one component
+
+    as a angular developer, we can provide communication between compoenents.
+
+    we can provide communication between compoenents in 4 ways.
+
+    1) @Input()
+
+    2) @Output()
+
+    3) @ViewChild()
+
+    4) @ViewChildren()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

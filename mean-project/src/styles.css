@@ -1,0 +1,9 @@
+h1,h2,h3{
+   color: red;
+   background-color: yellow;
+   width: 50%;
+   text-align: center;
+   border: 1px solid red;
+   border-radius: 0px 30px;
+   margin: 10px auto;
+}
