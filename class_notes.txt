@@ -453,6 +453,97 @@ communication between compoenents
 
 
 
+06-10-2021
+**********
+steps to provide communication from parent compoenent to child child compoenent
+
+1) create the angular application
+
+    > ng new InputAndOutputEx
+
+2) switch to project
+
+    > cd InputAndOutputEx
+
+3) create the ParentComponent
+
+    > ng g c components/parent --skip-tests -is --flat true --selector=parent
+
+        g stands for genarate
+
+        c stands for component
+
+        --skip-tests menas skip the unit test cases
+
+        -is means inline styles and skip the external css files
+
+        --flat true skip the additional folder creation
+
+        --selector used to assign the selector
+
+4) create the child component
+
+    > ng g c components/child --skip-tests -is --selector=child --flat true
+
+5) map the "ParentComponent" data to "ChildComponent"
+
+    parent.component.html
+
+6) bootstrap the ParentComponent
+
+    app.module.ts
+
+
+data from child compoenent to parent component
+==============================================
+1) define event in ChildComponent
+
+    => EventEmitter is Utility class, used to share the data from child compoenent to ParentComponent.
+
+
+2) fire the EventEmitter.
+
+
+3) map the child compoenent data to parent compoenent
+
+    parent.component.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
