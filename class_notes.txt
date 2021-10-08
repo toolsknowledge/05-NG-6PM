@@ -511,6 +511,39 @@ data from child compoenent to parent component
 
 
 
+@ViewChild()   && @ViewChildren()
+---------------------------------
+
+    - above directives used to get the reference from one compoenent to another compoenent
+
+
+step 1.
+    create the SecondComponent
+
+        > ng g c components/second --skip-tests -is --selector=second --flat true
+
+
+step 2.
+    create the FirstComponent
+
+    > ng g c components/first --skip-tests -is --selector=first --flat true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
