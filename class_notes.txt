@@ -529,6 +529,81 @@ step 2.
     > ng g c components/first --skip-tests -is --selector=first --flat true
 
 
+Pipes
+*****
+    format the data accroding "application" presentation.
+
+    we have two types of pipes.
+
+        1) Predefined Pipes
+
+        2) Custom Pipes
+
+    the pipes provided by angular framework called as Predefined Pipes.
+
+    the pipes developed by us based on application requirement called as Custom Pipes.
+
+
+
+Rest API Call
+*************
+
+1) execute the spring boot application
+
+2) test the rest api call with "Postman" / "Browser"
+
+        http://localhost:5000/api/v1/products    (GET Request)
+
+3) create the angular application
+
+    > ng new springBootIntegration
+
+4) create the service
+
+    >  ng g s spring --skip-tests --flat true
+
+5) create the component
+
+    AppComponent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
