@@ -568,6 +568,19 @@ Rest API Call
 
 
 
+Forms
+*****
+
+1) Template Driven Forms
+
+        - Main Forms Logic available in templates
+
+        - These forms are difficult to build "complex forms"
+
+
+2) Model Driven Forms / Reactive Forms
+
+
 
 
 

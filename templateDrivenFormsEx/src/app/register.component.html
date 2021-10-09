@@ -1,0 +1,79 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <form #registerForm="ngForm" (ngSubmit)="formData(registerForm.value)">
+
+                <!--
+                    first name
+                -->
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" name="fname" ngModel class="form-control">
+                </div>
+
+                <!--
+                    last name
+                -->
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" name="lname" class="form-control" ngModel>
+                </div>
+
+
+                <!--
+                    email
+                -->
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="uemail" class="form-control" ngModel>
+                </div>
+
+
+                <!--
+                    Gender
+                -->
+                <label>Gender</label>
+                <div class="form-check">
+                    <input type="radio" name="gender" value="male" ngModel class="form-check-input"> 
+                    <label class="form-check-label">Male</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="gender" value="female" ngModel class="form-check-input"> 
+                    <label class="form-check-label">Female</label>
+                </div>
+
+
+                <!-- checkboxes-->
+                <label>Subjects</label>
+                <div class="form-check">
+                    <input type="checkbox" name="subjects" class="form-check-input" ngModel value="Angular13">
+                    <label class="form-check-label">Angular13</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="subjects" class="form-check-input" ngModel value="ReactJS">
+                    <label class="form-check-label">ReactJS</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="subjects" class="form-check-input" ngModel value="VueJS">
+                    <label class="form-check-label">VueJS</label>
+                </div>
+
+
+                <!-- dropdown -->
+                <div class="form-group">
+                    <label>Country</label>
+                    <select class="form-control" name="country" ngModel>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+
+
+
+                <!-- submit button -->
+                <input type="submit" class="btn btn-success btn-sm my-5" value="Register">
+
+            </form>
+        </div>
+    </div>
+</div>
