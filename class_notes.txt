@@ -581,6 +581,58 @@ Forms
 2) Model Driven Forms / Reactive Forms
 
 
+Directives
+**********
+    Directives enhances the "views" features.
+
+    we have two types of directives
+
+        1) Predefined Directives
+
+        2) Custom Directives
+
+    The Directives given by angular framework called as "Predefined Directives".
+
+    The Directives Developed by us called as Custom Directives.
+
+
+Directives internally categorized into 3 types
+**********************************************
+
+1) Attribute type directives      ----      []
+
+2) event based directives          -----      events    Ex. click, dblclic, keydown,.....    ()
+
+3) structural based directives         ------   "*"
+                                       -----   *ngFor
+                                               *ngIf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
