@@ -13,10 +13,99 @@
    </tr>
 </table> -->
 
-
+<!-- 
 <input type="text" [(ngModel)]="uname">
 <input type="password" [(ngModel)]="upwd">
-<button (click)="login()">Login</button>
+<button (click)="login()">Login</button> -->
+
+
+<!-- 
+<button (click)="flag =!flag">Toggle</button>
+<div *ngIf="flag;else elseBlock">
+   <h2>Good Evening</h2>
+</div>
+
+<ng-template #elseBlock>
+   <h2>Happy Festival !!!</h2>
+</ng-template>
+
+
+<div *ngFor="let product of products">
+    <div *ngIf="product.p_cost>=30000">
+        {{product | json}}
+    </div>
+</div> -->
+
+
+
+<div class="container mt-5">
+   <button class="btn btn-success btn-sm" (click)="count = count+1">+</button>
+   <button class="btn btn-danger btn-sm">{{count}}</button>
+   <button class="btn btn-success btn-sm" (dblclick)="count = count-1">-</button>
+</div>
+
+
+<div [ngStyle]="{'color':'red'}">Hello</div>
+<div [ngStyle]="{'background-color':count===0?'green':'blue'}">Hello</div>
+
+<div *ngFor="let product of products">
+    <div [ngStyle]="{'color':chooseColor(product.p_name)}">{{product | json}}</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

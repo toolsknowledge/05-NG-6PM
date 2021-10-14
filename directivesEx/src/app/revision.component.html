@@ -1,0 +1,45 @@
+<!-- <button (click)="flag=!flag">Toggle</button>
+
+
+<div *ngIf="flag;else elseBlock">
+    <div class="container">
+        <input type="text" [(ngModel)]="obj.uname">
+        <br><br>
+        <input type="password" [(ngModel)]="obj.upwd">
+        <br><br>
+        <button (click)="login()">Login</button>
+        <h1 [ngStyle]="{'color': result==='Login Success'?'green':'red'}">{{result}}</h1>
+    </div>
+</div>
+
+<ng-template #elseBlock>
+    Already Logged In !!!
+</ng-template> -->
+
+
+<div [ngClass]="{'bg-success':true,'text-danger':true}">Hello</div>
+
+
+<div [ngClass]="{'text-danger':flag}">Hello</div>
+
+
+<div *ngFor="let emp of [{'e_id':111,'e_name':'e_one','e_sal':10000},
+                         {'e_id':222,'e_name':'e_two','e_sal':20000},
+                         {'e_id':333,'e_name':'e_three','e_sal':30000},
+                         {'e_id':444,'e_name':'e_four','e_sal':40000},
+                         {'e_id':555,'e_name':'e_five','e_sal':50000}]">
+        <div [ngClass]="{'text-success': emp.e_id === 111,
+                         'text-danger': emp.e_name === 'e_two'}"
+            [ngStyle]="{'color':emp.e_id === 333 ? 'blue':'grey'}">{{emp | json}}</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+

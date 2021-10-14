@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { bindCallback } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,6 @@ export class AppComponent {
         alert("Login Fail");
       }
   }
-
 
 
   products:any[] = [
@@ -50,4 +50,36 @@ export class AppComponent {
       "p_cost":60000,
       "p_image":"https://mernclassbucket.s3.us-east-2.amazonaws.com/p6.jpg"}
   ];
+
+
+  flag:boolean = false;
+
+
+  count:number=0;
+
+  chooseColor(category:any):any{
+      switch(category){
+        case 'shirt1':
+          return "red";
+        case 'shirt2':
+          return 'green';
+        case 'shirt3':
+          return 'pink';
+        case 'pant1':
+          return 'yellow';
+        case 'pant2':
+          return 'grey';
+        case 'pant6':
+          return 'black';
+      }
+  }
+
+
+
+
+
+
+
+
+
 }
