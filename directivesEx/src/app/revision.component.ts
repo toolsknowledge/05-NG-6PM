@@ -19,5 +19,8 @@ export class RevisionComponent implements OnInit {
   flag:boolean=true;
 
 
+  num:number = 0;
+
+
 
 }

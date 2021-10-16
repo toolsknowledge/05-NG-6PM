@@ -1,3 +1,5 @@
+
+
 <!-- <button (click)="flag=!flag">Toggle</button>
 
 
@@ -16,7 +18,7 @@
     Already Logged In !!!
 </ng-template> -->
 
-
+<!-- 
 <div [ngClass]="{'bg-success':true,'text-danger':true}">Hello</div>
 
 
@@ -31,7 +33,50 @@
         <div [ngClass]="{'text-success': emp.e_id === 111,
                          'text-danger': emp.e_name === 'e_two'}"
             [ngStyle]="{'color':emp.e_id === 333 ? 'blue':'grey'}">{{emp | json}}</div>
+</div> -->
+
+
+
+<div class="container mt-5">
+    <input type="number" [(ngModel)]="num">
+
+    <div [ngSwitch]="num">
+        <div *ngSwitchCase="1" class="btn btn-success btn-sm">{{num}}</div>
+        <div *ngSwitchCase="2" class="btn btn-primary btn-sm">{{num}}</div>
+        <div *ngSwitchCase="3" class="btn btn-warning btn-sm">{{num}}</div>
+        <div *ngSwitchCase="4" class="btn btn-dark btn-sm">{{num}}</div>
+        <div *ngSwitchCase="5" class="btn btn-info btn-sm">{{num}}</div>
+        <div *ngSwitchCase="6" class="btn btn-danger btn-sm">{{num}}</div>
+        <div *ngSwitchCase="7" class="btn btn-light btn-sm">{{num}}</div>
+        <div *ngSwitchDefault class="btn btn-outline-danger btn-lg">{{num}}</div>
+    </div>
+
+
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
