@@ -8,6 +8,9 @@ import { PagetwoComponent } from './pagetwo.component';
 import { PagethreeComponent } from './pagethree.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './routing/app.routes';
+import { ChildoneComponent } from './childone.component';
+import { ChildtwoComponent } from './childtwo.component';
+import { ChildthreeComponent } from './childthree.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { appRoutes } from './routing/app.routes';
     MasterComponent,
     PageoneComponent,
     PagetwoComponent,
-    PagethreeComponent
+    PagethreeComponent,
+    ChildoneComponent,
+    ChildtwoComponent,
+    ChildthreeComponent
   ],
   imports: [
     BrowserModule,RouterModule.forRoot(appRoutes)

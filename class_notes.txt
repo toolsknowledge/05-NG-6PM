@@ -609,6 +609,112 @@ Directives internally categorized into 3 types
 
 
 
+Single Page Applications
+++++++++++++++++++++++++
+
+    - loading one component to another component without refreshing the whole webpage called as Single Page Application.
+
+    - navigation in single page application called as "Routing".
+
+    - we will implement single page applications with the help of "RouterModule"
+
+steps to implement the Single Page Application
+**********************************************
+
+1) create the angular application
+
+    > ng new spaDemo1
+
+2) switch to angular application
+
+    > cd spaDemo1
+
+3) create the components
+
+    > ng g c master --skip-tests -is --flat true --selector=master
+
+    > ng g c pageone --skip-tests -is --flat true --selector=pageone
+
+    > ng g c pagetwo --skip-tests -is --flat true --selector=pagetwo
+
+    > ng g c pagethree --skip-tests -is --flat true --selector=pagethree
+
+
+
+4) implement the Routing
+
+    /page_one ===> PageoneComponent
+
+    /page_two ===> PagetwoComponent
+
+    /page_three ===> PagethreeComponent
+
+    *************************************
+    spaDemo1
+           src
+             app
+               routing
+                  app.routes.ts
+    ************************************
+
+5) load the routes
+
+    app.module.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

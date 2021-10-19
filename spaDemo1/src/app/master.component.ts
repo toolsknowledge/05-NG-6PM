@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class MasterComponent implements OnInit {
-
+  p_id:number = 222;
   constructor() { }
 
   ngOnInit(): void {
