@@ -583,7 +583,7 @@ Forms
 
 Directives
 **********
-    Directives enhances the "views" features.
+    Directives enhances the "views" capabilities.
 
     we have two types of directives
 
