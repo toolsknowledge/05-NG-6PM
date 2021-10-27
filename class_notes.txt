@@ -666,6 +666,128 @@ steps to implement the Single Page Application
 
 
 
+Lazy Loading
+************
+
+1) collect the cloud images path
+
+    https://mernclassbucket.s3.us-east-2.amazonaws.com/p1.jpg
+
+    https://mernclassbucket.s3.us-east-2.amazonaws.com/p2.jpg
+
+    https://mernclassbucket.s3.us-east-2.amazonaws.com/p3.jpg
+
+    https://mernclassbucket.s3.us-east-2.amazonaws.com/p4.jpg
+
+    https://mernclassbucket.s3.us-east-2.amazonaws.com/p5.jpg
+
+    https://mernclassbucket.s3.us-east-2.amazonaws.com/p6.jpg
+
+
+2) store above images path to "mysql" database
+
+    password : admin
+
+    database name : ng6pm
+
+    table name : products
+
+    host : localhost
+
+
+implement the backend
+*********************
+    implement the backend to interact with the database
+
+
+1) create the directory
+
+    Ex.
+        backend
+
+2) switch to backend directory
+
+    > cd backend
+
+3) download the libraries
+
+    => mysql
+        "mysql library" used to connect to the mysql database
+
+    => express
+        "express library" used to develop the rest apis.
+                GET
+                POST
+                PUT
+                DELETE
+                ---
+                ---
+                ---
+
+    => cors
+        "cors" library used to enable the cors policy
+
+
+    Ex.
+        npm i mysql express cors
+
+            (or)
+
+        yarn add mysql express cors
+
+
+    all the libraries downloads to node_modules folder.
+
+
+4) implement the rest api
+
+    server.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
