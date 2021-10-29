@@ -783,6 +783,54 @@ lazyDemoEx
 
 finally "EcommerceModel" is ready
 
+finally "EcommerceService" is ready with "getProducts()" function.
+
+finally "EcommerceComponent" is ready.
+
+finally "EcommerceModule" is ready
+
+
+
+4) implement DemoModule
+
+
+**************************************************
+lazyDemoEx
+         src
+           app
+             demo
+               module
+                 demo.module.ts
+
+               compoenent
+                  demo.component.ts
+                  demo.component.html
+***************************************************
+
+    finally "DemoModule" is ready
+
+
+5) implement the main routing
+
+        app.module.ts
+
+6) implement CanLoad Authentication
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
