@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.6rem;
+    margin: 0px;
+    font-family: Helvetica, Arial, sans-serif;
+    height: 100vh;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100%;
+}
+
+header{
+    grid-area: "header"; 
+    background-color: #203040;  
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+a:hover{
+    color: #a05040;
+}
+
+main{
+    grid-area: "main";
+    padding: 1rem;
+}
+footer{
+    grid-area: "footer";
+    background-color: #203040;
+    color: #fff;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    font-size: 3rem;
+}
+.row.center{
+    justify-content: center;
+    align-items: center;
+}
+
+img.medium{
+    width: 29rem;
+}
+.card{
+    background-color: #c0c0c0;
+    margin: 1rem;
+    border: 0.1rem solid #c0c0c0;
+    border-radius: 0.5rem;
+}
+.card-body{
+    margin-bottom: 0.5rem;
+}
+
+h2{
+    font-size: 1.6rem;
+    margin: 0;
+}
