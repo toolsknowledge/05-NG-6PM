@@ -818,6 +818,93 @@ lazyDemoEx
 
 
 
+AWS Deployment
+**************
+1) install "aws cli" tool
+
+    aws cli tool, used to deploy angular,react,vuejs applications to AWS.
+
+website : https://aws.amazon.com/cli/
+
+file    : AWSCLIV2.msi
+
+2) prepare the production build
+
+    > ng build
+
+    if build success automatically "dist" folder will create.
+
+
+3) preapre aws s3 bucket
+
+        1) static web site hosting    <== properties
+
+        2) bucket policies      <== permissions
+
+
+                {
+                "Version": "2012-10-17",
+                "Statement": [
+                        {
+                        "Sid": "PublicReadGetObject",
+                        "Effect": "Allow",
+                        "Principal": "*",
+                        "Action": [
+                                "s3:GetObject"
+                        ],
+                        "Resource": [
+                                "arn:aws:s3:::02-ng-6pm/*"
+                        ]
+                        }
+                ]
+	        }
+
+
+
+4) generate "tokens" to make angular application as cloud application
+
+        IAM
+
+5) edit the package.json file
+
+    package.json
+    ************
+
+    "aws-deploy":"aws s3 sync dist/awsDeploymentEx/ s3://02-ng-6pm"
+
+
+6) execute the following commands
+
+        > aws configure
+
+        > ng build && npm run aws-deploy
+
+
+7) get the public url from "static web site hosting"
+
+        URL : http://02-ng-6pm.s3-website.us-east-2.amazonaws.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
