@@ -886,6 +886,126 @@ file    : AWSCLIV2.msi
 
 
 
+MEAN Stack Development
+**********************
+
+DataBase ===>  MongoDB
+
+BackEnd  ====>   NodeJS
+
+frontend ===> Angular
+
+Rest API'S ====> ExpressJS
+
+
+1) create the database.
+
+    database name : 05-ng-6pm
+
+    collection names : user_details
+
+                        products
+    password : admin
+
+    url : mongodb+srv://admin:admin@miniprojectdb.nzphu.mongodb.net/05-ng-6pm?retryWrites=true&w=majority
+
+
+BackEnd
+*******
+
+NodeJS
+******
+    "NodeJS" is "backend" technology.
+
+    "NodeJS" internally using "ExpressJS" to develop "Rest API'S"
+
+    Ex.
+        GET
+
+        POST
+
+        PUT
+
+        DELETE
+
+    we will develop NodeJS Applications with "javascript".
+
+    NodeJS Supports libraries/node modules
+
+libraries
+*********
+
+1) mongoose
+
+    used to connect to mongodb database
+
+
+2) express
+
+    used to develop the rest apis
+
+
+3) cors
+
+    used to enable the cors policy
+
+
+we will download above libraries by using either npm tool or yarn tool
+
+
+Ex.
+    > yarn add mongoose express cors
+
+    above libraries downloads to "node_modules" folder.
+
+
+
+
+Next Week :
+
+MEAN Stack
+
+Payment Gateways
+
+Angular Material 
+
+Debugging
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
