@@ -958,23 +958,25 @@ Ex.
 
     above libraries downloads to "node_modules" folder.
 
+create the folder
+
+Ex.
+    mean_server
 
 
+switch to mean_server
 
-Next Week :
-
-MEAN Stack
-
-Payment Gateways
-
-Angular Material 
-
-Debugging
+    > cd mean_server
 
 
+download the libraries
+
+> yarn add mongoose express cors
 
 
+implement the rest api's
 
+server.js
 
 
 
