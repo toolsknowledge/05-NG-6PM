@@ -59,8 +59,30 @@ app.post("/login",(req,res)=>{
 
 //if client token matches with server token
 //client sending the token with headers
-app.get("/products",(req,res)=>{
 
+//middleware
+const compare = (req,res,next)=>{
+    let allHeaders = req.headers;
+    if(allHeaders.token == server_token){
+        next();
+    }else{
+        res.status(400).send({"message":"unauthorized user"});
+    }
+};
+
+app.get("/products",[compare],(req,res)=>{
+    ashokIT.connect(`mongodb+srv://admin:admin@miniprojectdb.nzphu.mongodb.net/05-ng-6pm?retryWrites=true&w=majority`,(err,connection)=>{
+        if(err) throw err;
+        else{
+            const db = connection.db("05-ng-6pm");
+            db.collection("products").find().toArray((err,records)=>{
+                if(err) throw err;
+                else{
+                    res.send(records);
+                }
+            })
+        }
+    });
 });
 
 

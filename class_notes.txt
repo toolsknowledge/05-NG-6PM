@@ -978,6 +978,46 @@ implement the rest api's
 
 server.js
 
+finally following rest api's are ready
+
+1) http://localhost:8080/login    (POST)
+
+2) http://localhost:8080/products  (GET)
+
+
+frontend
+********
+
+1) create the angular application
+
+    > ng new mean-ex
+
+
+2) implement the following modules
+
+    1) login
+
+    2) products
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 
 
