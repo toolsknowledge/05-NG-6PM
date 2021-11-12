@@ -9,7 +9,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule,RouterModule.forRoot([{path:"",loadChildren:()=>import("./login/module/login.module").then(m=>m.LoginModule)}])
+    BrowserModule,RouterModule.forRoot([{path:"",loadChildren:()=>import("./login/module/login.module").then(m=>m.LoginModule)},
+                                        {path:"products",loadChildren:()=>import("./products/module/products.module").then(m=>m.ProductsModule)}])
   ],
   providers: [],
   bootstrap: [AppComponent]
