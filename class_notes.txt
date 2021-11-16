@@ -1000,6 +1000,125 @@ frontend
     2) products
 
 
+deploy mean project to aws server
+*********************************
+
+deploy backend application
+
+1) push "backend" code to GitHub
+
+
+2) create the application in AWS Server
+
+        > ElasticBeanStalk
+
+3) implement the CI/CD Operation
+
+        > CodePipeline
+
+4) get the cloud url from ElasticBeanStalk
+
+    > 05mean6pm-env.eba-umeyhjg2.ap-south-1.elasticbeanstalk.com/login       (POST)
+
+    > 05mean6pm-env.eba-umeyhjg2.ap-south-1.elasticbeanstalk.com/products    (GET)
+
+
+5) test the above rest api calls by using Postman
+
+
+frontend deployment
+*******************
+
+1) configure above rest api calls to angular application
+
+
+2) run the angular application
+
+
+3) create the production build
+
+    > ng build
+
+    if build success automatically "dist" folder will create
+
+    "dist" folder representing production build.
+
+4) move the "dist" folder "files" to aws server "s3 bucket"
+
+    => properties
+
+    => bucket policies
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

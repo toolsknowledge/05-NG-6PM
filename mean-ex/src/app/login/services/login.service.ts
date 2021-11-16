@@ -7,6 +7,6 @@ import { Observable } from "rxjs";
 export class LoginService{
     constructor(private http:HttpClient){}
     public login_fn(login_details:any):Observable<any>{
-        return this.http.post("http://localhost:8080/login",login_details);
+        return this.http.post("http://05mean6pm-env.eba-umeyhjg2.ap-south-1.elasticbeanstalk.com/login",login_details);
     }
 }

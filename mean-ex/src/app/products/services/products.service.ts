@@ -7,8 +7,6 @@ import { Observable } from "rxjs";
 export class ProductsService{
     constructor(private http:HttpClient){}
     public getProducts():Observable<any>{
-        let str:any = window.localStorage.getItem("mean_project");
-        let obj = JSON.parse(str);
-        return this.http.get("http://localhost:8080/products",{headers:{"token":obj.token}});
+        return this.http.get("http://05mean6pm-env.eba-umeyhjg2.ap-south-1.elasticbeanstalk.com/products");
     }
 }
