@@ -1050,6 +1050,44 @@ frontend deployment
     => bucket policies
 
 
+5) install aws cli tool
+
+6) create the keys to upload angular application 
+
+    IAM
+
+7) modify the package.json file
+
+    "aws-deploy":"aws s3 sync dist/mean-ex/ s3://05-mean-6pm"
+
+8) execute the following commands
+
+    > aws configure
+
+    > ng build && npm run aws-deploy
+
+
+9) get the cloud url from static website hosting
+
+    URL : http://05-mean-6pm.s3-website.ap-south-1.amazonaws.com
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
 
 
 

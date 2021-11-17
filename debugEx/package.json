@@ -1,13 +1,12 @@
 {
-  "name": "mean-ex",
+  "name": "debug-ex",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "aws-deploy":"aws s3 sync dist/mean-ex/ s3://05-mean-6pm"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {

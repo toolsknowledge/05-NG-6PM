@@ -1,0 +1,13 @@
+<fieldset>
+  <legend>Users List</legend>
+  <input type="text" [(ngModel)]="user_details.uname">
+
+  <br><br>
+  <input type="email" [(ngModel)]="user_details.email">
+
+  <br><br>
+
+  <button (click)="addUser()">Add User</button>
+
+  <h5>{{users | json}}</h5>
+</fieldset>
