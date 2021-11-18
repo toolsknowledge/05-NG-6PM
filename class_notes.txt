@@ -1073,6 +1073,106 @@ frontend deployment
 
 
 
+State Management
+****************
+    - Angular Applications are component based applications
+
+    - we can create more than one compoenent
+
+    - we can provide communication between componenents also.
+
+    - while incresing the application size, communication between components is difficult.
+
+    - in order to reduce complexity between compoenents communication we will choose state management.
+
+    - we will implement state management by using "NgRx" package.
+
+
+Architecture
+************
+
+    1) types
+        - identifying the application requirement called as types.
+        Ex.
+            STORE_THE_DATA_IN_DATABASE
+
+            STORE_THE_DATA_IN_DATABASE_SUCCESS
+
+            STORE_THE_DATA_IN_DATABASE_FAILURE
+
+    2) actions
+        - implementation of types called as actions
+
+    3) effects
+        - manage the api data (side effects)
+
+    4) reducer
+        - reducer containes application result
+
+    5) store
+        - used to manage the centralized data.
+
+    6) dispatch
+        - requesting technically called as dispatch
+
+    7) subscribe
+        - accessing the result called as subscribe
+
+    8) selector
+        - selector behaves like mediator to handover result to compoenents
+
+    9) state
+        - application final result called as state
+
+
+Example_1:
+**********
+
+1) create the angular application
+
+    > ng new state-management-ex
+
+2) switch to angular application
+
+    > cd state-management-ex
+
+3) download the libraries
+
+    > @ngrx/store
+
+    > yarn add @ngrx/store
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
