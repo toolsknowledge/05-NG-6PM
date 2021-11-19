@@ -1143,6 +1143,223 @@ Example_1:
     > yarn add @ngrx/store
 
 
+CRUD Operations with JSON Server
+********************************
+    JSON Server, used to develop the" Rest API'S" Based on "JSON Data".
+
+    JSON Server Default Port Number "3000"
+
+    we can install JSON Server by using following command
+
+        > npm install -g json-server
+
+
+    -g stands for "global" Installation
+
+
+steps to develop the rest api's
+*******************************
+1) create the directory
+
+        Ex. 
+                server
+
+2) switch to server directory
+
+
+        > cd server
+
+3) create the json data
+
+        Ex.
+                data.json
+
+
+4) deploy the data.json file to json-server
+
+    > json-server --watch data.json
+
+5) test the rest api calls with Postman
+
+    =>  http://localhost:3000/products    (GET)
+
+    => http://localhost:3000/products     (POST)
+
+    => http://localhost:3000/products/{id}    (PUT)
+
+    => http://localhost:3000/products/{id}    (DELETE)
+
+
+
+Intrgrate Above Rest API Calls to frontend application
+******************************************************
+
+1) create the angular application
+
+        > ng new crud-project
+
+
+2) switch to crud-project
+
+        > cd crud-project
+
+3) download the libraries
+
+        > @ngrx/store
+
+        > @ngrx/effects
+
+        > bootstrap
+
+
+        > yarn add @ngrx/store @ngrx/effects bootstrap
+
+
+4) configure the bootstrap in angular.json file
+
+
+5) implement the "state management" with "modules"
+
+    > AppModule   (Parent Module)
+
+    > GetModule   (Child Module)
+
+    > PostModule    (Child Module)
+
+    > PutModule (Child Module)
+
+    > DeleteModule(Child Module)
+
+
+
+GetModule
+**********
+crud-project
+          src
+            app
+
+              common
+                  model
+                    product.model.ts
+                            finally "Product" model is ready
+
+              get-module
+                      service
+                           get.service.ts
+                                finally "GetService" is ready
+
+                      types
+                          get.types.ts
+                                finally following types are ready
+                                        1) GET_PRODUCTS
+
+                                        2) GET_PRODUCTS_SUCCESS
+
+                                        3) GET_PRODUCTS_FAIL
+
+                      actions
+                          get.actions.ts
+
+                      effects
+                          get.effects.ts
+
+                      reducer
+                          get.reducer.ts
+
+                      module
+                          get.module.ts
+
+                      selector
+                          get.selector.ts
+
+                      compoenent
+                         get.compoenent.ts
+                         get.compoenent.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
