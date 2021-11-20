@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+i{
+    
+    margin-right: 20px;
+}
+
+.alert{
+    padding: 10px;
+    border: 0.1rem solid transparent;
+    color: white;
+}
+
+.alert-danger{
+    background-color: red;
+}

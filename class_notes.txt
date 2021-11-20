@@ -1259,22 +1259,72 @@ crud-project
 
                       actions
                           get.actions.ts
+                                finally following actions are ready.
+                                    1)getProducts
+
+                                    2)getProductsSuccess
+
+                                    3)getProductsFail
 
                       effects
                           get.effects.ts
+                                finally "GetEffects" is ready
 
                       reducer
                           get.reducer.ts
+                                finally "getReducer" is ready
 
                       module
                           get.module.ts
+                                finally "GetModule" is ready
 
                       selector
                           get.selector.ts
+                                finally "getSelector" is ready
 
                       compoenent
                          get.compoenent.ts
                          get.compoenent.html
+                            finally "GetComponent" also ready
+
+finally we completed GetModule
+
+
+***********************************************
+crud-project
+           src
+             app
+               post-module
+                        service  
+                            post.service.ts
+
+                        types
+                            post.types.ts
+
+                        actions
+                            post.actions.ts
+
+                        effects
+                            post.effects.ts
+
+                        state
+                            post.state.ts
+
+                        reducer
+                            post.reducer.ts
+
+                        compoenent
+                            post.component.ts
+                            post.component.html
+
+                        module
+                            post.module.ts
+
+                        selector
+                            post.selector.ts
+
+
+
 
 
 

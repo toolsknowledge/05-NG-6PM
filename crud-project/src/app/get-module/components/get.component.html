@@ -1,0 +1,30 @@
+<div *ngIf="!loading;else elseBlock">
+    <loading-component></loading-component>
+</div>
+<ng-template #elseBlock>
+    <div *ngIf="error=='Network Fail';else finalBlock">
+        <alert-component [variant]=variant [message]="error"></alert-component>
+    </div>
+</ng-template>
+
+<ng-template #finalBlock>
+    <table class="table table-success table-striped" *ngIf="products.length>0">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>COST</th>
+                <th>ACTIONS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{product.id}}</td>
+                <td>{{product.p_name}}</td>
+                <td>{{product.p_cost}}</td>
+                <td><i class="fa fa-trash"></i><i class="fa fa-edit"></i></td>
+            </tr>
+        </tbody>
+    </table>
+</ng-template>
+
