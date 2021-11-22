@@ -1297,21 +1297,27 @@ crud-project
                post-module
                         service  
                             post.service.ts
+                                finally "PostService" is ready with "postData" function
 
                         types
                             post.types.ts
+                                finally "POST_PRODUCT", "POST_PRODUCT_SUCCESS" and "POST_PRODUCT_FAIL" types are ready
 
                         actions
                             post.actions.ts
+                                finally "productPost", "productPostSuccess" and "productPostFail" actions are ready.
 
                         effects
                             post.effects.ts
+                                finally "postEffects" is ready
 
                         state
                             post.state.ts
+                                finally "PostState" is ready
 
                         reducer
                             post.reducer.ts
+                                finally "postReducer" is ready
 
                         compoenent
                             post.component.ts
@@ -1319,6 +1325,7 @@ crud-project
 
                         module
                             post.module.ts
+                                finally "PostModule" is ready with "post" key
 
                         selector
                             post.selector.ts
