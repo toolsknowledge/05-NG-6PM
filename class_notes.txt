@@ -1329,6 +1329,7 @@ crud-project
 
                         selector
                             post.selector.ts
+                                finally "postSelector" is ready
 
 
 

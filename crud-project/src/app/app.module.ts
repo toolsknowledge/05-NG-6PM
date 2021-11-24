@@ -13,7 +13,8 @@ import { AppComponent } from './app.component';
   imports: [
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
-    BrowserModule,RouterModule.forRoot([{path:"",loadChildren:()=>import("./get-module/module/get.module").then(m=>m.GetModule)}])
+    BrowserModule,RouterModule.forRoot([{path:"",loadChildren:()=>import("./get-module/module/get.module").then(m=>m.GetModule)},
+    {path:"posts",loadChildren:()=>import("./post-module/module/post.module").then(m=>m.PostModule)}])
   ],
   providers: [],
   bootstrap: [AppComponent]
