@@ -1,0 +1,3 @@
+export const UPDATE_PRODUCT:string = "UPADTE_PRODUCT";
+export const UPDATE_PRODUCT_SUCCESS:string = "UPDATE_PRODUCT_SUCCESS";
+export const UPDATE_PRODUCT_FAIL:string = "UPDATE_PRODUCT_FAIL";

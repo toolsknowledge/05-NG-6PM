@@ -14,7 +14,8 @@ import { AppComponent } from './app.component';
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
     BrowserModule,RouterModule.forRoot([{path:"posts",loadChildren:()=>import("./get-module/module/get.module").then(m=>m.GetModule)},
-    {path:"",loadChildren:()=>import("./post-module/module/post.module").then(m=>m.PostModule)}])
+    {path:"xyz",loadChildren:()=>import("./post-module/module/post.module").then(m=>m.PostModule)},
+    {path:"",loadChildren:()=>import("./put-module/module/put.module").then(m=>m.PutModule)}])
   ],
   providers: [],
   bootstrap: [AppComponent]

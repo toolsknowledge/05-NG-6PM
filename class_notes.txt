@@ -1330,6 +1330,55 @@ crud-project
                         selector
                             post.selector.ts
                                 finally "postSelector" is ready
+*******************************************************************************************
+finally PostModule completed successfully
+
+
+
+**************************************************************
+crud-project
+           src
+             app
+               put-module
+                      service
+                         put.service.ts
+                            finally "PutService" is ready with "updateProduct(-,-)" function
+                      types
+                        put.types.ts
+                            finally "UPDATE_PRODUCT", "UPDATE_PRODUCT_SUCCESS", "UPDATE_PRODUCT_FAIL" are ready
+                      actions
+                        put.actions.ts
+                            finally "updateProduct", "updateProductSuccess" and "updateProductFail" are ready
+                      effects
+                        put.effects.ts
+                            finally "PutEffects" is ready
+
+
+                      component
+                        put.component.ts
+                        put.component.html
+                            finally "PutComponent" is ready
+
+                     reducer
+                        put.reducer.ts
+                            finally "putReducer" is ready
+
+                      module
+                        put.module.ts
+                            finally "PutModule" is ready
+
+                      state
+                        put.state.ts
+                            finally "PutState" is ready.
+
+                      selector
+                        put.selector.ts
+                            finally "putSelector" is ready
+*******************************************************************
+                      
+                     
+
+
 
 
 
