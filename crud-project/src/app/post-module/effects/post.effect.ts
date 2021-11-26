@@ -15,6 +15,7 @@ export class postEffects{
     public postEffect = createEffect(()=>this.actions$.pipe(
         ofType(productPost),
         mergeMap((action:any)=>this.service.postData(action.product).pipe(map((posRes:Product)=>{
+            console.log(action);
             return productPostSuccess({"product":posRes})
         }),catchError((err:any)=>of(productPostFail({"error":"Network Fail"})))))
     ))  
