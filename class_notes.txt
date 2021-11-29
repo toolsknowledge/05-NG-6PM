@@ -1377,7 +1377,51 @@ crud-project
 *******************************************************************
                       
                      
+delete-module
++++++++++++++
 
+***************************************************************************************
+crud-project
+           src
+             app
+               delete-module
+                      service
+                         delete.service.ts
+                            finally "DeleteService" is ready with "deleteProduct(-)" function
+                           
+                      types
+                        delete.types.ts
+                            finally "DELETE_PRODUCT", "DELETE_PRODUCT_SUCCESS" and "DELETE_PRODUCT_FAIL" types are ready
+                            
+                      actions
+                        delete.actions.ts
+                            finally "deleteProduct", "deleteProductSuccess" and "deleteProductFail" actions ready
+                            
+                      effects
+                        delete.effects.ts
+                            finally "DeleteEffects" is ready.
+                    
+                    state
+                        delete.state.ts
+                            finally "DeleteState" is ready
+                    
+                    reducer
+                        delete.reducer.ts
+                            finally "deleteReducer" is ready
+                            
+                    component
+                        delete.component.ts
+                        delete.component.html
+                            finally "DeleteComponent" is ready
+
+
+                    module
+                        delete.module.ts
+                            finally "DeleteModule" is ready
+                    selector
+                        delete.selector.ts
+                            finally "deleteSelector" is ready
+*******************************************************************
 
 
 
