@@ -16,7 +16,7 @@ export default class GetComponent{
     products:Product[];
     error:string;
     displayStyle = "none";
-
+    totalProducts:any={};
     constructor(private store:Store){
         this.loading = false;
         this.products = [];
@@ -26,10 +26,38 @@ export default class GetComponent{
     ngOnInit(){
         //subscribe the result
         this.store.select(getSelector).subscribe((posRes)=>{
-            const {loading,products,error} = posRes;
-            this.loading = loading;
-            this.products = products;
-            this.error = error;
+           const {products,post} = posRes;
+           
+           if(post.loading){
+               const product = post.product;
+               const allProducts = products.products;
+               console.log(allProducts);
+               console.log([product]);
+               this.totalProducts = [...allProducts,...[product]];
+               
+           }else{
+               this.loading = products.loading;
+               this.totalProducts = products.products;
+               this.error = products.error;
+           }
+
+
+            // if(posRes.post.loading){
+               
+            //     const {loading,products,error} = posRes.products;
+            //     this.loading = loading;
+            //     this.products = {...products,...posRes.post.product};
+            //     console.log(products);
+            //     this.error = error;
+            // }else{
+                //const {loading,products,error} = posRes.products;
+                //this.loading = loading;
+                //this.products = products;
+                //this.error = error;
+            // }
+            
+            
+           
         },(errRes)=>{
             console.log(errRes);
         })

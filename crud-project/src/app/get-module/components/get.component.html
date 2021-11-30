@@ -1,3 +1,5 @@
+<!-- {{totalProducts | json}} -->
+
 <div *ngIf="!loading;else elseBlock">
     <loading-component></loading-component>
 </div>
@@ -9,7 +11,7 @@
 
 <ng-template #finalBlock>
     <button class="btn btn-success btn-sm" (click)="addRecord()">Add Record</button>
-    <table class="table table-success table-striped" *ngIf="products.length>0">
+    <table class="table table-success table-striped">
         <thead>
             <tr>
                 <th>ID</th>
@@ -19,7 +21,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let product of products">
+            <tr *ngFor="let product of totalProducts">
                 <td>{{product.id}}</td>
                 <td>{{product.p_name}}</td>
                 <td>{{product.p_cost}}</td>
