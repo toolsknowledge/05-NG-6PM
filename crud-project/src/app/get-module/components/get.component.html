@@ -25,7 +25,7 @@
                 <td>{{product.id}}</td>
                 <td>{{product.p_name}}</td>
                 <td>{{product.p_cost}}</td>
-                <td><i class="fa fa-trash"></i><i class="fa fa-edit"></i></td>
+                <td><i class="fa fa-trash" (click)="deleteProduct(product.id)"></i><i class="fa fa-edit" (click)="editProduct(product)"></i></td>
             </tr>
         </tbody>
     </table>
@@ -69,6 +69,57 @@
     </div>
   </div>
 </div>
+
+
+<!--
+  
+-->
+
+
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngStyle]="{'display':displayStyle1}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">MiniProject</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+            <label>ID</label>
+            <input type="number" class="form-control" id="_id">
+        </div>
+
+        <div class="form-group">
+            <label>P_NAME</label>
+            <input type="text" class="form-control" id="_name">
+        </div>
+
+        <div class="form-group">
+            <label>P_COST</label>
+            <input type="number" class="form-control" id="_cost">
+        </div>
+  
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success" (click)="updateRecord()">Save</button>
+        <button type="button" class="btn btn-danger" 
+                (click)="closeUpdatePopup()">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
 
 
 
