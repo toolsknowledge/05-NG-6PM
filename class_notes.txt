@@ -1423,6 +1423,61 @@ crud-project
                             finally "deleteSelector" is ready
 *******************************************************************
 
+Test Cases
+**********
+    test the application functionality called as "Testing".
+
+    we have two types of test cases
+
+    1) unit test cases
+
+    2) end to end test cases
+
+    we will write unit test cases with the help of "jasmine".
+
+    jasmine is the "library" used to write the "unit test" cases.
+
+    "karma" is the runner used to execute the "jasmine" test cases.
+
+    we will write "end to end" test cases with "protractor".
+
+    angular framework recognise the unit test cases with ".spec.ts" extension
+
+    we will recognise the end to end test cases ".e2e-spec.ts" file
+
+    "karma.conf.js" is the configuration file to write ane execute the unit test cases
+
+    angular starts the execution from "index.html" file.
+
+    index.html file internally executes "main.ts" file.
+
+    for main.ts file, test.js file is the testing file
+
+    ng test is the command used to execute the unit test cases.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
