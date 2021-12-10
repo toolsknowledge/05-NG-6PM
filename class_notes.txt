@@ -1459,7 +1459,21 @@ Test Cases
 
 
 
+RXJS
+****
+    Reactive Extension javascript.
 
+    RXJS package, used to make the asynchronous calls.
+
+    "HttpClient" used to make the "network" call.
+
+    "Observable" used to make the "asynchronous" call.
+
+    "HttpClient" available in "HttpClientModule"
+
+    "HttpClient" and "HttpClientModule" available in @angular/common/http package
+
+    Observable available in rxjs package.
 
 
 
