@@ -1476,6 +1476,42 @@ RXJS
     Observable available in rxjs package.
 
 
+Angular Material
+****************
+    Angular Material simplifies the complex tasks in simplified manner.
+
+    Angular Material helps to create the Rich UI.
+
+    > ng add @angular/material
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
